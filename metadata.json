@@ -1,0 +1,6 @@
+{
+  "name": "Makeover by Mehak",
+  "description": "Luxury Bridal & Beauty Atelier - Transforming Special Moments Into Timeless Beauty",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@theme {
+  --color-primary: #8a4853;
+  --color-primary-light: #a6606b;
+  --color-secondary: #735c00;
+  --color-accent-gold: #d4af37;
+  --color-lux-ivory: #fbfbe2;
+  --color-lux-soft-nude: #f5f5dc;
+  --color-lux-dark: #1b1d0e;
+  --color-lux-muted: #524345;
+  --color-lux-glow: rgba(251, 251, 226, 0.7);
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-lux-ivory);
+    color: var(--color-lux-dark);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(251, 251, 226, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(138, 72, 83, 0.12);
+  }
+  
+  .gold-border-gradient {
+    border: 1px solid;
+    border-image: linear-gradient(45deg, #ffd9dd, #e9c349, #ffd9dd) 1;
+  }
+}
+
+/* Custom scrollbar to keep layout premium */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5dc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a6606b;
+}
